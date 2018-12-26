@@ -34,6 +34,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.navigationBar.tintColor = .black
+        
         tableView.tableFooterView = UIView()
         tableView.register(UINib(nibName: AnimationTableViewCell.className, bundle: nil), forCellReuseIdentifier: AnimationTableViewCell.className)
     }

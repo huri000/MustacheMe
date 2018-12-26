@@ -25,6 +25,11 @@
 		1419EF6D21D2C7CC00D59A53 /* CurvePropertyAnimatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1419EF6B21D2C7CC00D59A53 /* CurvePropertyAnimatorViewController.xib */; };
 		1419EF7121D2C90200D59A53 /* DailyTipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419EF6F21D2C90200D59A53 /* DailyTipViewController.swift */; };
 		1419EF7221D2C90200D59A53 /* DailyTipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1419EF7021D2C90200D59A53 /* DailyTipViewController.xib */; };
+		143144E021D4064B00B8A087 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143144DE21D4064B00B8A087 /* ImageCollectionViewCell.swift */; };
+		143144E121D4064B00B8A087 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143144DF21D4064B00B8A087 /* ImageCollectionViewCell.xib */; };
+		148D10B821D2DA1900479C0B /* ViewFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D10B721D2DA1900479C0B /* ViewFromNib.swift */; };
+		148D10BB21D2DD4000479C0B /* DailyTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D10BA21D2DD4000479C0B /* DailyTipView.swift */; };
+		148D10BD21D2DD5600479C0B /* DailyTipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148D10BC21D2DD5600479C0B /* DailyTipView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,11 @@
 		1419EF6B21D2C7CC00D59A53 /* CurvePropertyAnimatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurvePropertyAnimatorViewController.xib; sourceTree = "<group>"; };
 		1419EF6F21D2C90200D59A53 /* DailyTipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTipViewController.swift; sourceTree = "<group>"; };
 		1419EF7021D2C90200D59A53 /* DailyTipViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyTipViewController.xib; sourceTree = "<group>"; };
+		143144DE21D4064B00B8A087 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		143144DF21D4064B00B8A087 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		148D10B721D2DA1900479C0B /* ViewFromNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewFromNib.swift; sourceTree = "<group>"; };
+		148D10BA21D2DD4000479C0B /* DailyTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTipView.swift; sourceTree = "<group>"; };
+		148D10BC21D2DD5600479C0B /* DailyTipView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyTipView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +117,7 @@
 		1419EF5A21D2B92500D59A53 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				148D10B721D2DA1900479C0B /* ViewFromNib.swift */,
 				1419EF5B21D2B93300D59A53 /* UIColor+Utils.swift */,
 				1419EF5821D2B90400D59A53 /* UIViewPropertyAnimator+Utils.swift */,
 				1419EF6121D2C0A500D59A53 /* Object+ClassName.swift */,
@@ -147,6 +158,10 @@
 			children = (
 				1419EF6F21D2C90200D59A53 /* DailyTipViewController.swift */,
 				1419EF7021D2C90200D59A53 /* DailyTipViewController.xib */,
+				143144DE21D4064B00B8A087 /* ImageCollectionViewCell.swift */,
+				143144DF21D4064B00B8A087 /* ImageCollectionViewCell.xib */,
+				148D10BA21D2DD4000479C0B /* DailyTipView.swift */,
+				148D10BC21D2DD5600479C0B /* DailyTipView.xib */,
 			);
 			path = DailyTip;
 			sourceTree = "<group>";
@@ -213,9 +228,11 @@
 				1419EF4921D2B7F600D59A53 /* Assets.xcassets in Resources */,
 				1419EF7221D2C90200D59A53 /* DailyTipViewController.xib in Resources */,
 				1419EF4721D2B7F500D59A53 /* Main.storyboard in Resources */,
+				143144E121D4064B00B8A087 /* ImageCollectionViewCell.xib in Resources */,
 				1419EF6D21D2C7CC00D59A53 /* CurvePropertyAnimatorViewController.xib in Resources */,
 				1419EF5721D2B8BC00D59A53 /* MultipleAnimationsViewController.xib in Resources */,
 				1419EF6821D2C5D900D59A53 /* ScrubbedPropertyAnimatorViewController.xib in Resources */,
+				148D10BD21D2DD5600479C0B /* DailyTipView.xib in Resources */,
 				1419EF6021D2C03F00D59A53 /* AnimationTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,13 +244,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148D10BB21D2DD4000479C0B /* DailyTipView.swift in Sources */,
 				1419EF7121D2C90200D59A53 /* DailyTipViewController.swift in Sources */,
+				143144E021D4064B00B8A087 /* ImageCollectionViewCell.swift in Sources */,
 				1419EF6721D2C5D900D59A53 /* ScrubbedPropertyAnimatorViewController.swift in Sources */,
 				1419EF5C21D2B93300D59A53 /* UIColor+Utils.swift in Sources */,
 				1419EF6C21D2C7CC00D59A53 /* CurvePropertyAnimatorViewController.swift in Sources */,
 				1419EF5921D2B90400D59A53 /* UIViewPropertyAnimator+Utils.swift in Sources */,
 				1419EF5F21D2C03F00D59A53 /* AnimationTableViewCell.swift in Sources */,
 				1419EF5621D2B8BC00D59A53 /* MultipleAnimationsViewController.swift in Sources */,
+				148D10B821D2DA1900479C0B /* ViewFromNib.swift in Sources */,
 				1419EF4421D2B7F500D59A53 /* ViewController.swift in Sources */,
 				1419EF4221D2B7F500D59A53 /* AppDelegate.swift in Sources */,
 				1419EF6221D2C0A500D59A53 /* Object+ClassName.swift in Sources */,
