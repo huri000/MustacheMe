@@ -29,5 +29,4 @@ class ImageCollectionViewCell: UICollectionViewCell {
         super.prepareForReuse()
         image = nil
     }
-
 }

@@ -63,7 +63,7 @@ class DailyTipViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Freddie M"
+        navigationItem.title = "Freddie's Photos"
         
         let backgroundColor = UIColor(white: 0.9, alpha: 1)
         view.backgroundColor = backgroundColor
@@ -176,12 +176,12 @@ class DailyTipViewController: UIViewController {
         if translationAnimator != nil {
             isReversed = !isReversed
         } else {
-            translate(to: state, startAnimating: true)
+            translate(to: state)
         }
     }
     
     private func beginTranslation() {
-        translate(to: dailyTipView.state.opposite, startAnimating: false)
+        translate(to: dailyTipView.state.opposite)
         translationAnimator.pauseAnimation()
         panBeginningProgress = translationAnimator.fractionComplete
     }
@@ -220,17 +220,15 @@ class DailyTipViewController: UIViewController {
         }
     }
     
-    private func translate(to state: DailyTipView.State, startAnimating: Bool) {
+    private func translate(to state: DailyTipView.State) {
         guard translationAnimator == nil else {
             return
         }
         
         translationAnimator = UIViewPropertyAnimator(duration: 1, dampingRatio: 1) {
-            self.dailyTipView.updateLayout(for: state)
-            self.updateBlurEffect(for: state)
-            self.updatePosition(for: state)
+            self.updateLayout(for: state)
         }
-        
+                
         // Assign a new `state` value upon completion
         translationAnimator.addCompletion { position in
             switch position {
@@ -245,6 +243,12 @@ class DailyTipViewController: UIViewController {
             self.translationAnimator = nil
         }
         translationAnimator.startAnimation()
+    }
+    
+    private func updateLayout(for state: DailyTipView.State) {
+        dailyTipView.updateLayout(for: state)
+        updateBlurEffect(for: state)
+        updatePosition(for: state)
     }
     
     private func updatePosition(for state: DailyTipView.State) {
